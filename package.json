@@ -1,0 +1,41 @@
+{
+  "name": "chatbootai-ui",
+  "version": "1.0.0",
+  "description": "ChatBootAI user interface",
+  "private": true,
+  "scripts": {
+    "start": "npm start --workspace=chat-web-component",
+    "build": "npm run build -ws --if-present",
+    "clean": "npm run clean -ws --if-present",
+    "format": "prettier --list-different --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "release:check": "semantic-release --dry-run"
+  },
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "typescript": "*"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120,
+    "bracketSpacing": true
+  }
+}

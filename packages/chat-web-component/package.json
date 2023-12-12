@@ -1,0 +1,51 @@
+{
+  "name": "@chatbootai/chat",
+  "version": "1.0.0",
+  "description": "Chat web component implementing the ChatBootAI protocol",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8000 --host",
+    "build": "vite build",
+    "watch": "vite build --watch --minify false",
+    "lint": "lit-analyzer",
+    "clean": "npx rimraf dist"
+  },
+  "author": {
+    "name": "Yohan Lasorsa",
+    "url": "https://twitter.com/sinedied"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChatBootAI/chatbootai-ui.git"
+  },
+  "homepage": "https://github.com/ChatBootAI/chatbootai-ui",
+  "bugs": {
+    "url": "https://github.com/ChatBootAI/chatbootai-ui/issues"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "web-component",
+    "chat",
+    "chatbot",
+    "chatbootai",
+    "openai",
+    "ai",
+    "llm"
+  ],
+  "release": {
+    "extends": "semantic-release-npm-github",
+    "branches": "main"
+  },
+  "dependencies": {
+    "lit": "^3.0.0"
+  },
+  "devDependencies": {
+    "lit-analyzer": "^2.0.1",
+    "semantic-release-npm-github": "^5.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
