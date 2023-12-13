@@ -1,3 +1,4 @@
+import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
 // Expose environment variables to the client
@@ -8,16 +9,12 @@ export default defineConfig({
   build: {
     outDir: './dist',
     emptyOutDir: true,
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            return 'vendor';
-          }
-        },
-      },
-    },
+    lib: {
+      // eslint-disable-next-line unicorn/prefer-module
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'index',
+      fileName: 'index',
+    }
   },
   server: {
     proxy: {

@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "Chat web component implementing the ChatBootAI protocol",
   "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite --port 8000 --host",
-    "build": "vite build",
+    "build": "vite build && tsc",
     "watch": "vite build --watch --minify false",
     "lint": "lit-analyzer",
-    "clean": "npx rimraf dist"
+    "clean": "npx rimraf dist",
+    "postinstall": "npm run build"
   },
   "author": {
     "name": "Yohan Lasorsa",
