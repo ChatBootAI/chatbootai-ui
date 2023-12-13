@@ -59,9 +59,9 @@ export const defaultOptions: ChatComponentOptions = {
   apiUrl: '',
   enablePromptSuggestions: true,
   promptSuggestions: [
-    'How to search and book rentals?',
-    'What is the refund policy?',
-    'How to contact a representative?',
+    'Are you a human?',
+    'What kind of questions can you answer?',
+    'Can you help me?',
   ],
   messages: [],
   strings: {
