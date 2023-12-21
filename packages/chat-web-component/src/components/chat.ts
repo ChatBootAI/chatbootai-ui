@@ -58,11 +58,7 @@ export const defaultOptions: ChatComponentOptions = {
   chunkIntervalMs: 30,
   apiUrl: '',
   enablePromptSuggestions: true,
-  promptSuggestions: [
-    'Are you a human?',
-    'What kind of questions can you answer?',
-    'Can you help me?',
-  ],
+  promptSuggestions: ['Are you a human?', 'What kind of questions can you answer?', 'Can you help me?'],
   messages: [],
   strings: {
     promptSuggestionsTitle: 'Ask anything or try an example',

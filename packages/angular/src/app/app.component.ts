@@ -12,7 +12,8 @@ import '@chatbootai/chat';
     <nav>ChatBootAI</nav>
     <cba-chat></cba-chat>
   `,
-  styles: [`
+  styles: [
+    `
       nav {
         background: #333;
         color: #fff;
@@ -31,7 +32,7 @@ import '@chatbootai/chat';
         max-width: 1024px;
         margin: 0 auto;
       }
-  `],
+    `,
+  ],
 })
-export class AppComponent {
-}
+export class AppComponent {}

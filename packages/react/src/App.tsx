@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import '@chatbootai/chat';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <nav>ChatBootAI</nav>
       <cba-chat></cba-chat>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
