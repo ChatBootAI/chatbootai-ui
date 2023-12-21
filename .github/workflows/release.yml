@@ -5,7 +5,7 @@ on:
   #   branches: [main]
 
 concurrency:
-  group: "release-npm"
+  group: 'release-npm'
 
 permissions:
   contents: write
@@ -17,19 +17,19 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v3
-      with:
-        persist-credentials: false
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-    - run: npm ci
-    - run: npm run build:web-component
-    - run: cd packages/chat-web-component && npx semantic-release
-      if: success()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        # Need owner/admin account to bypass branch protection
-        GIT_COMMITTER_NAME: sinedied
-        GIT_COMMITTER_EMAIL: noda@free.fr
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run build:web-component
+      - run: cd packages/chat-web-component && npx semantic-release
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # Need owner/admin account to bypass branch protection
+          GIT_COMMITTER_NAME: sinedied
+          GIT_COMMITTER_EMAIL: noda@free.fr
