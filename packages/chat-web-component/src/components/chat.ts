@@ -27,7 +27,6 @@ export type ChatComponentState = {
 };
 
 export type ChatComponentOptions = ChatRequestOptions & {
-  oneShot: boolean;
   enablePromptSuggestions: boolean;
   enableContentLinks: boolean;
   promptSuggestions: string[];
@@ -53,7 +52,6 @@ export type ChatComponentOptions = ChatRequestOptions & {
 export const defaultOptions: ChatComponentOptions = {
   suggestFollowupQuestions: true,
   enableContentLinks: false,
-  oneShot: false,
   stream: false,
   chunkIntervalMs: 30,
   apiUrl: '',
