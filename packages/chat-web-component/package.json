@@ -49,7 +49,6 @@
   ],
   "release": {
     "extends": [
-      "semantic-release-monorepo",
       "semantic-release-npm-github"
     ],
     "tagFormat": "@chatbootai/chat-${version}",
@@ -61,7 +60,6 @@
   "devDependencies": {
     "lit-analyzer": "^2.0.1",
     "semantic-release": "^22.0.12",
-    "semantic-release-monorepo": "^7.0.5",
     "semantic-release-npm-github": "^5.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
