@@ -19,6 +19,7 @@
     "watch": "vite build --watch --minify false",
     "lint": "lit-analyzer",
     "clean": "npx rimraf dist",
+    "release:check": "semantic-release --dry-run",
     "postinstall": "npm run build"
   },
   "author": {
