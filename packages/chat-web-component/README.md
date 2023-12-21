@@ -21,6 +21,8 @@ Depending of the framework and build system you're using, you'll have to import 
 - [Vanilla HTML](https://github.com/ChatBootAI/chatbootai-ui/tree/main/packages/static-html)
 - [Angular](https://github.com/ChatBootAI/chatbootai-ui/tree/main/packages/angular)
 - [React](https://github.com/ChatBootAI/chatbootai-ui/tree/main/packages/react)
+- [Vue](https://github.com/ChatBootAI/chatbootai-ui/tree/main/packages/vue)
+- [Svelte](https://github.com/ChatBootAI/chatbootai-ui/tree/main/packages/svelte)
 
 ## Development
 
