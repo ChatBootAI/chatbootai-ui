@@ -1,0 +1,12 @@
+:root {
+  --cba-primary: #d40;
+  --cba-bg: #eee;
+  --cba-border-radius: 16px;
+}
+
+html,
+body {
+  font-size: 16px;
+  margin: 0;
+  background: var(--cba-bg);
+}
