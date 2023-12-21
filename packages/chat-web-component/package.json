@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Chat web component implementing the ChatBootAI protocol",
   "type": "module",
-  "access": "public",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -46,7 +48,11 @@
     "llm"
   ],
   "release": {
-    "extends": "semantic-release-npm-github",
+    "extends": [
+      "semantic-release-monorepo",
+      "semantic-release-npm-github"
+    ],
+    "tagFormat": "@chatbootai/chat-${version}",
     "branches": "main"
   },
   "dependencies": {
@@ -54,6 +60,8 @@
   },
   "devDependencies": {
     "lit-analyzer": "^2.0.1",
+    "semantic-release": "^22.0.12",
+    "semantic-release-monorepo": "^7.0.5",
     "semantic-release-npm-github": "^5.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
