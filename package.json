@@ -10,9 +10,7 @@
     "build:website": "npm run build:website --workspace=@chatbootai/chat",
     "clean": "npm run clean -ws --if-present",
     "format": "prettier --list-different --write .",
-    "format:check": "prettier --list-different .",
-    "lint": "xo",
-    "lint:fix": "xo --fix ."
+    "format:check": "prettier --list-different ."
   },
   "license": "Apache-2.0",
   "workspaces": [
@@ -21,8 +19,7 @@
   "devDependencies": {
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
-    "typescript": "*",
-    "xo": "^0.56.0"
+    "typescript": "*"
   },
   "engines": {
     "node": ">=18",
